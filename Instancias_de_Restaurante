@@ -1,0 +1,21 @@
+drop database restaurante
+alter table itemconsumo add infonutri varchar(140) not null;
+insert into cliente (idcliente, nomecliente) values (1, 'Letícia')
+insert into cliente values (2, 'Regina')
+insert into cliente values (3, 'Pierre')
+insert into cliente values (4, 'Jerônimo')
+delete itemconsumo
+
+select * from cliente 
+insert into itemconsumo values(11,'água')
+
+insert into itemconsumo values (11,'água',3.40,'bebida','garrafa 500ml');
+insert into itemconsumo values (12,'água',5.00,'bebida','garrafa 1l');
+insert into itemconsumo values (13,'coca-cola',7.00,'bebida', null);
+insert into itemconsumo values (14,'bolinho',12.00,'comida', null);
+insert into itemconsumo values (15,'hambúrguer',17.18,'comida','pão carne ovo');
+insert into itemconsumo values (16,'coxinha',7.00,'comida', null);
+select * from itemconsumo
+alter table itemconsumo drop infonutri
+
+--Inserir dados/instâncias dentro de cada tabela---
